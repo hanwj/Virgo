@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+        
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_bg"
+        android:orientation="horizontal">
+        
+        <RadioButton 
+            android:id="@+id/rb_download_page"
+            android:text="@string/download"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_collection"
+            android:checked="true"/>
+        
+        <RadioButton 
+            android:id="@+id/rb_home_page"
+            android:drawableTop="@drawable/selector_homepage"
+            android:text="@string/home_page"
+            style="@style/BottomTabStyle"/>        
+        
+        <RadioButton
+            android:id="@+id/rb_usercenter_page"
+            android:text="@string/usercenter"
+            android:drawableTop="@drawable/selector_usercenter"
+            style="@style/BottomTabStyle"/>
+        
+        <RadioButton 
+            android:id="@+id/rb_more_page"
+            android:text="@string/more"
+            android:drawableTop="@drawable/selector_more"
+            style="@style/BottomTabStyle"/>
+        
+    </RadioGroup>
+
+</LinearLayout>

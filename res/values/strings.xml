@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Virgo</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="home_page">首页</string>
+	<string name="download">下载</string>
+	<string name="usercenter">个人中心</string>
+	<string name="more">更多</string>
+	
+</resources>
