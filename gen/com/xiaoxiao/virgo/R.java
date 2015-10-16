@@ -27,14 +27,28 @@ public final class R {
         public static final int usercenter_normal=0x7f02000d;
     }
     public static final class id {
-        public static final int radiogroup=0x7f060000;
-        public static final int rb_download_page=0x7f060001;
-        public static final int rb_home_page=0x7f060002;
-        public static final int rb_more_page=0x7f060004;
-        public static final int rb_usercenter_page=0x7f060003;
+        public static final int id_bottombar=0x7f060001;
+        public static final int id_btn1=0x7f060002;
+        public static final int id_btn2=0x7f060003;
+        public static final int id_btn3=0x7f060004;
+        public static final int id_btn4=0x7f060005;
+        public static final int id_content=0x7f060006;
+        public static final int id_fragment_title=0x7f060000;
+        public static final int id_title_center_title=0x7f06000e;
+        public static final int id_title_left_btn=0x7f06000d;
+        public static final int radiogroup=0x7f060008;
+        public static final int rb_download_page=0x7f060009;
+        public static final int rb_home_page=0x7f06000a;
+        public static final int rb_more_page=0x7f06000c;
+        public static final int rb_usercenter_page=0x7f06000b;
+        public static final int viewPager=0x7f060007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int activity_main_back=0x7f030001;
+        public static final int fragment_content=0x7f030002;
+        public static final int fragment_title=0x7f030003;
+        public static final int layout1=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
