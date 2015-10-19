@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	    
+    <fragment 
+        android:id="@+id/id_fragment_title"
+        android:name="com.xiaoxiao.fragment.TitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <!-- <fragment 
+        android:layout_below="@id/id_fragment_title"
+        android:id="@+id/id_fragment_content"
+        android:name="com.xiaoxiao.fragment.ContentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/> -->
+    <LinearLayout 
+        android:id="@+id/id_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_bottom_bg"
+        android:layout_alignParentBottom="true">
+    	
+        <Button 
+            android:id="@+id/id_btn1"
+            android:text="@string/home_page"
+            android:drawableTop="@drawable/selector_homepage"
+            android:background="@null"
+            style="@style/BottomTabStyle"/>
+        
+        <Button 
+            android:id="@+id/id_btn2"
+            android:text="@string/download"
+            android:drawableTop="@drawable/selector_collection"
+            android:background="@null"
+            style="@style/BottomTabStyle"/>
+        
+        <Button 
+            android:id="@+id/id_btn3"
+            android:text="@string/usercenter"
+            android:drawableTop="@drawable/selector_usercenter"
+            android:background="@null"
+            style="@style/BottomTabStyle"/>
+        
+        <Button 
+            android:id="@+id/id_btn4"
+            android:text="@string/more"
+            android:drawableTop="@drawable/selector_more"
+            android:background="@null"
+            style="@style/BottomTabStyle"/>
+        
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/id_fragment_title"/>
+    
+</RelativeLayout>

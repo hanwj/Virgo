@@ -1,63 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tool="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-	    
-    <fragment 
-        android:id="@+id/id_fragment_title"
-        android:name="com.xiaoxiao.fragment.TitleFragment"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="45dp"/>
-
-    <!-- <fragment 
-        android:layout_below="@id/id_fragment_title"
-        android:id="@+id/id_fragment_content"
-        android:name="com.xiaoxiao.fragment.ContentFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/> -->
-    <LinearLayout 
-        android:id="@+id/id_bottombar"
+        android:layout_height="0dp"
+        android:background="#FF0000"
+        android:layout_weight="1">   	    
+    </android.support.v4.view.ViewPager>
+    
+    <RadioGroup
+        android:id="@+id/id_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@drawable/shape_bottom_bg"
-        android:layout_alignParentBottom="true">
-    	
-        <Button 
-            android:id="@+id/id_btn1"
-            android:text="@string/home_page"
-            android:drawableTop="@drawable/selector_homepage"
-            android:background="@null"
-            style="@style/BottomTabStyle"/>
+        android:orientation="horizontal">
         
-        <Button 
-            android:id="@+id/id_btn2"
+        <RadioButton 
+            android:id="@+id/rb_btn1"
             android:text="@string/download"
+            style="@style/BottomTabStyle"
             android:drawableTop="@drawable/selector_collection"
-            android:background="@null"
-            style="@style/BottomTabStyle"/>
+            android:checked="true"/>
         
-        <Button 
-            android:id="@+id/id_btn3"
+        <RadioButton 
+            android:id="@+id/rb_btn2"
+            android:drawableTop="@drawable/selector_homepage"
+            android:text="@string/home_page"
+            style="@style/BottomTabStyle"/>        
+        
+        <RadioButton
+            android:id="@+id/rb_btn3"
             android:text="@string/usercenter"
             android:drawableTop="@drawable/selector_usercenter"
-            android:background="@null"
             style="@style/BottomTabStyle"/>
         
-        <Button 
-            android:id="@+id/id_btn4"
+        <RadioButton 
+            android:id="@+id/rb_btn4"
             android:text="@string/more"
             android:drawableTop="@drawable/selector_more"
-            android:background="@null"
             style="@style/BottomTabStyle"/>
         
-    </LinearLayout>
-    
-    <FrameLayout 
-        android:id="@+id/id_content"
-        android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:layout_below="@id/id_fragment_title"/>
-    
-</RelativeLayout>
+    </RadioGroup>
+
+</LinearLayout>
