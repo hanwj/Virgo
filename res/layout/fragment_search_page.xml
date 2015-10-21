@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-	
-    <RelativeLayout 
+    
+	<RelativeLayout 
         android:id="@+id/id_top_part"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -27,5 +27,5 @@
             android:textColorHint="#20000000"/>
         
     </RelativeLayout>
-	
+
 </LinearLayout>

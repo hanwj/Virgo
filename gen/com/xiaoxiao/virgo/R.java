@@ -462,8 +462,9 @@ public final class R {
         public static final int selector_more=0x7f02000a;
         public static final int selector_usercenter=0x7f02000b;
         public static final int shape_bottom_bg=0x7f02000c;
-        public static final int usercenter_light=0x7f02000d;
-        public static final int usercenter_normal=0x7f02000e;
+        public static final int shape_search_background=0x7f02000d;
+        public static final int usercenter_light=0x7f02000e;
+        public static final int usercenter_normal=0x7f02000f;
     }
     public static final class id {
         public static final int id_bottombar=0x7f070007;
@@ -473,11 +474,10 @@ public final class R {
         public static final int id_btn4=0x7f07000b;
         public static final int id_content=0x7f07000c;
         public static final int id_fragment_title=0x7f070006;
-        public static final int id_page_mask=0x7f07000f;
         public static final int id_radiogroup=0x7f070001;
         public static final int id_searchbar=0x7f07000e;
-        public static final int id_title_center_title=0x7f070011;
-        public static final int id_title_left_btn=0x7f070010;
+        public static final int id_title_center_title=0x7f070010;
+        public static final int id_title_left_btn=0x7f07000f;
         public static final int id_top_part=0x7f07000d;
         public static final int rb_btn1=0x7f070002;
         public static final int rb_btn2=0x7f070003;
@@ -490,8 +490,9 @@ public final class R {
         public static final int activity_main_back2=0x7f030001;
         public static final int fragment_content=0x7f030002;
         public static final int fragment_home_page=0x7f030003;
-        public static final int fragment_title=0x7f030004;
-        public static final int layout1=0x7f030005;
+        public static final int fragment_search_page=0x7f030004;
+        public static final int fragment_title=0x7f030005;
+        public static final int layout1=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
