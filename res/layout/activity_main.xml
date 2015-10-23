@@ -5,14 +5,16 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
     
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+    <ListView 
+        android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#FFF"
-        android:layout_weight="1">   	    
-    </android.support.v4.view.ViewPager>
-    
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:padding="20dp">
+        
+    </ListView>
+ 
     <RadioGroup
         android:id="@+id/id_radiogroup"
         android:layout_width="match_parent"

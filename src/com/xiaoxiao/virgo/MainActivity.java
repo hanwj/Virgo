@@ -1,24 +1,25 @@
 package com.xiaoxiao.virgo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
-import com.xiaoxiao.fragment.HomePageFragment;
-import com.xiaoxiao.fragment.MyFragmentAdapter;
-
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.Window;
 import android.widget.RadioGroup;
+import android.widget.SimpleAdapter;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends ListActivity {
 
-	private List<Fragment> pageList;
     private RadioGroup mRadioGroup;
+    
+    private String[] listTitle = {"name","id"};
+    private int[]  itemId = {R.id.id_user_name,R.id.id_user_id};
+    String[] userName = {"zhangsan","lisi","wangwu","zhaoliu"};
+    String[] userId = {"1001","1002","1003","1004"};
+    List<HashMap<String,String>> listData = null;
+    HashMap<String,String> map = null;
     
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +28,17 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
         
         mRadioGroup = (RadioGroup)findViewById(R.id.id_radiogroup);
-        pageList = new ArrayList<Fragment>();
-        pageList.add(new HomePageFragment());
         
-        ViewPager viewPager = (ViewPager)findViewById(R.id.viewPager);
-        viewPager.setAdapter(new MyFragmentAdapter(getSupportFragmentManager(),pageList));
-        //initView();
-    }
-    
-    private void initView(){
-    	ViewPager viewPager = (ViewPager)findViewById(R.id.viewPager);
-    	
+        listData = new ArrayList<HashMap<String,String>>();
+        for(int i=0;i<4;i++)
+        {
+        	map = new HashMap<String,String>();
+        	map.put("id", userId[i]);
+        	map.put("name", userName[i]);
+        	listData.add(map);
+        }
+        
+        SimpleAdapter simpleAdapter = new SimpleAdapter(this,listData,R.layout.list_item,listTitle,itemId);
+        setListAdapter(simpleAdapter);
     }
 }
