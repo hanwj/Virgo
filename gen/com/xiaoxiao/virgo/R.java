@@ -456,15 +456,18 @@ public final class R {
         public static final int ic_launcher=0x7f020004;
         public static final int more_light=0x7f020005;
         public static final int more_normal=0x7f020006;
-        public static final int search_icon=0x7f020007;
-        public static final int selector_collection=0x7f020008;
-        public static final int selector_homepage=0x7f020009;
-        public static final int selector_more=0x7f02000a;
-        public static final int selector_usercenter=0x7f02000b;
-        public static final int shape_bottom_bg=0x7f02000c;
-        public static final int shape_search_background=0x7f02000d;
-        public static final int usercenter_light=0x7f02000e;
-        public static final int usercenter_normal=0x7f02000f;
+        public static final int pic1=0x7f020007;
+        public static final int pic2=0x7f020008;
+        public static final int pic3=0x7f020009;
+        public static final int search_icon=0x7f02000a;
+        public static final int selector_collection=0x7f02000b;
+        public static final int selector_homepage=0x7f02000c;
+        public static final int selector_more=0x7f02000d;
+        public static final int selector_usercenter=0x7f02000e;
+        public static final int shape_bottom_bg=0x7f02000f;
+        public static final int shape_search_background=0x7f020010;
+        public static final int usercenter_light=0x7f020011;
+        public static final int usercenter_normal=0x7f020012;
     }
     public static final class id {
         public static final int id_bottombar=0x7f070007;
@@ -472,17 +475,24 @@ public final class R {
         public static final int id_btn2=0x7f070009;
         public static final int id_btn3=0x7f07000a;
         public static final int id_btn4=0x7f07000b;
+        public static final int id_container=0x7f070010;
         public static final int id_content=0x7f07000c;
         public static final int id_fragment_title=0x7f070006;
+        public static final int id_img=0x7f070016;
+        public static final int id_indicator=0x7f070013;
+        public static final int id_name=0x7f070017;
         public static final int id_radiogroup=0x7f070001;
+        public static final int id_recommendation=0x7f070011;
         public static final int id_searchbar=0x7f07000e;
-        public static final int id_title_center_title=0x7f070010;
-        public static final int id_title_left_btn=0x7f07000f;
+        public static final int id_title_center_title=0x7f070015;
+        public static final int id_title_left_btn=0x7f070014;
         public static final int id_top_part=0x7f07000d;
+        public static final int id_viewPager=0x7f070012;
         public static final int rb_btn1=0x7f070002;
         public static final int rb_btn2=0x7f070003;
         public static final int rb_btn3=0x7f070004;
         public static final int rb_btn4=0x7f070005;
+        public static final int scrollview=0x7f07000f;
         public static final int viewPager=0x7f070000;
     }
     public static final class layout {
@@ -493,6 +503,7 @@ public final class R {
         public static final int fragment_search_page=0x7f030004;
         public static final int fragment_title=0x7f030005;
         public static final int layout1=0x7f030006;
+        public static final int layout_pic_with_text=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
