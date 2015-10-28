@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	
+    <string name="default_str">default</string>
     <string name="app_name">Virgo</string>
     <string name="hello_world">Hello world!</string>
 	<string name="home_page">首页</string>
@@ -8,4 +9,6 @@
 	<string name="usercenter">个人中心</string>
 	<string name="more">更多</string>
 	<string name="search_str">漫画名|作者</string>
+	<string name="back">返回</string>
+	<string name="detail">详情</string>
 </resources>

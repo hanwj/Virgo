@@ -36,7 +36,6 @@ public class MainActivity extends FragmentActivity {
     }
     
     private void initView(){
-    	ViewPager viewPager = (ViewPager)findViewById(R.id.viewPager);
     	
     }
 }

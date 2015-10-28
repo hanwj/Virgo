@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 	
-    <RelativeLayout 
+    <!-- <RelativeLayout 
         android:id="@+id/id_top_part"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -26,17 +26,19 @@
             android:paddingLeft="50dp"
             android:textColorHint="#20000000"/>
         
-    </RelativeLayout>
+    </RelativeLayout> -->
 	
     <ScrollView 
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
         
         <LinearLayout 
             android:id="@+id/id_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             
             <FrameLayout 
             	android:id="@+id/id_recommendation"
@@ -63,23 +65,55 @@
                 android:id="@+id/id_rank"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
                 
-            	<ImageView
-            	    android:id="@+id/id_rank1"
-            	    android:layout_width="0dp"
-            	    android:layout_height="match_parent"
-            	    android:layout_weight="1"/>
+            	<include 
+            	        android:id="@+id/id_rank1"
+            	        android:layout_width="0dp"
+            	        android:layout_height="match_parent"
+            	        android:layout_weight="1"
+            	        android:layout_marginLeft="10dp"
+            	        layout="@layout/layout_pic_with_text"/>
+            	<View 
+            	    android:layout_width="10dp"
+            	    android:layout_height="match_parent"/>
             	
             	<LinearLayout 
             	    android:layout_width="0dp"
             	    android:layout_height="match_parent"
             	    android:layout_weight="1"
+            	    android:layout_marginRight="10dp"
             	    android:orientation="vertical">
             	    
+            	    <include 
+            	        android:id="@+id/id_rank2"
+            	        android:layout_width="match_parent"
+            	        android:layout_height="0dp"
+            	        android:layout_weight="1"
+            	        layout="@layout/layout_pic_with_text"/>
+            	    <View 
+            	    	android:layout_width="match_parent"
+            	    	android:layout_height="10dp"/>
+            	    <include 
+            	        android:id="@+id/id_rank3"
+            	        android:layout_width="match_parent"
+            	        android:layout_height="0dp"
+            	        android:layout_weight="1"
+            	        layout="@layout/layout_pic_with_text"/>
+            	    
             	</LinearLayout>
-            </LinearLayout>
             	
+            	
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/id_subcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                
+            </LinearLayout>	
         </LinearLayout>
     
     </ScrollView>

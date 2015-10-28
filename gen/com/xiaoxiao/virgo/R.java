@@ -448,75 +448,91 @@ public final class R {
          */
         public static final int yellow=0x7f040003;
     }
+    public static final class dimen {
+        public static final int header_height=0x7f050000;
+    }
     public static final class drawable {
-        public static final int collection_light=0x7f020000;
-        public static final int collection_normal=0x7f020001;
-        public static final int homeicon_light=0x7f020002;
-        public static final int homeicon_normal=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int indicator_default=0x7f020005;
-        public static final int indicator_selected=0x7f020006;
-        public static final int more_light=0x7f020007;
-        public static final int more_normal=0x7f020008;
-        public static final int pic1=0x7f020009;
-        public static final int pic2=0x7f02000a;
-        public static final int pic3=0x7f02000b;
-        public static final int search_icon=0x7f02000c;
-        public static final int selector_collection=0x7f02000d;
-        public static final int selector_homepage=0x7f02000e;
-        public static final int selector_more=0x7f02000f;
-        public static final int selector_usercenter=0x7f020010;
-        public static final int shape_bottom_bg=0x7f020011;
-        public static final int shape_search_background=0x7f020012;
-        public static final int usercenter_light=0x7f020013;
-        public static final int usercenter_normal=0x7f020014;
+        public static final int backicon=0x7f020000;
+        public static final int collection_light=0x7f020001;
+        public static final int collection_normal=0x7f020002;
+        public static final int homeicon_light=0x7f020003;
+        public static final int homeicon_normal=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int indicator_default=0x7f020006;
+        public static final int indicator_selected=0x7f020007;
+        public static final int more_light=0x7f020008;
+        public static final int more_normal=0x7f020009;
+        public static final int pic1=0x7f02000a;
+        public static final int pic2=0x7f02000b;
+        public static final int pic3=0x7f02000c;
+        public static final int search_icon=0x7f02000d;
+        public static final int selector_collection=0x7f02000e;
+        public static final int selector_homepage=0x7f02000f;
+        public static final int selector_more=0x7f020010;
+        public static final int selector_usercenter=0x7f020011;
+        public static final int shape_bottom_bg=0x7f020012;
+        public static final int shape_search_background=0x7f020013;
+        public static final int usercenter_light=0x7f020014;
+        public static final int usercenter_normal=0x7f020015;
     }
     public static final class id {
-        public static final int id_bottombar=0x7f070007;
-        public static final int id_btn1=0x7f070008;
-        public static final int id_btn2=0x7f070009;
-        public static final int id_btn3=0x7f07000a;
-        public static final int id_btn4=0x7f07000b;
-        public static final int id_container=0x7f070010;
-        public static final int id_content=0x7f07000c;
-        public static final int id_fragment_title=0x7f070006;
-        public static final int id_img=0x7f070018;
-        public static final int id_indicator=0x7f070013;
-        public static final int id_name=0x7f070019;
-        public static final int id_radiogroup=0x7f070001;
-        public static final int id_rank=0x7f070014;
-        public static final int id_rank1=0x7f070015;
-        public static final int id_recommendation=0x7f070011;
-        public static final int id_searchbar=0x7f07000e;
-        public static final int id_title_center_title=0x7f070017;
-        public static final int id_title_left_btn=0x7f070016;
-        public static final int id_top_part=0x7f07000d;
-        public static final int id_viewPager=0x7f070012;
-        public static final int rb_btn1=0x7f070002;
-        public static final int rb_btn2=0x7f070003;
-        public static final int rb_btn3=0x7f070004;
-        public static final int rb_btn4=0x7f070005;
-        public static final int scrollview=0x7f07000f;
-        public static final int viewPager=0x7f070000;
+        public static final int id_backbtn=0x7f080000;
+        public static final int id_bottombar=0x7f08000a;
+        public static final int id_btn1=0x7f08000b;
+        public static final int id_btn2=0x7f08000c;
+        public static final int id_btn3=0x7f08000d;
+        public static final int id_btn4=0x7f08000e;
+        public static final int id_container=0x7f080011;
+        public static final int id_content=0x7f08000f;
+        public static final int id_downloadbtn=0x7f080002;
+        public static final int id_fragment_title=0x7f080009;
+        public static final int id_gridview=0x7f08001e;
+        public static final int id_img=0x7f08001f;
+        public static final int id_indicator=0x7f080014;
+        public static final int id_name=0x7f080020;
+        public static final int id_radiogroup=0x7f080004;
+        public static final int id_rank=0x7f080015;
+        public static final int id_rank1=0x7f080016;
+        public static final int id_rank2=0x7f080017;
+        public static final int id_rank3=0x7f080018;
+        public static final int id_recommendation=0x7f080012;
+        public static final int id_searchbar=0x7f08001b;
+        public static final int id_subcontainer=0x7f080019;
+        public static final int id_title=0x7f080001;
+        public static final int id_title_center_title=0x7f08001d;
+        public static final int id_title_left_btn=0x7f08001c;
+        public static final int id_top_part=0x7f08001a;
+        public static final int id_viewPager=0x7f080013;
+        public static final int rb_btn1=0x7f080005;
+        public static final int rb_btn2=0x7f080006;
+        public static final int rb_btn3=0x7f080007;
+        public static final int rb_btn4=0x7f080008;
+        public static final int scrollview=0x7f080010;
+        public static final int viewPager=0x7f080003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_main_back2=0x7f030001;
-        public static final int fragment_content=0x7f030002;
-        public static final int fragment_home_page=0x7f030003;
-        public static final int fragment_search_page=0x7f030004;
-        public static final int fragment_title=0x7f030005;
-        public static final int layout1=0x7f030006;
-        public static final int layout_pic_with_text=0x7f030007;
+        public static final int activity_cartoon_detail_page=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_main_back2=0x7f030002;
+        public static final int fragment_content=0x7f030003;
+        public static final int fragment_home_page=0x7f030004;
+        public static final int fragment_search_page=0x7f030005;
+        public static final int fragment_title=0x7f030006;
+        public static final int layout1=0x7f030007;
+        public static final int layout_gridview_with_title=0x7f030008;
+        public static final int layout_pic_with_text=0x7f030009;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int download=0x7f050003;
-        public static final int hello_world=0x7f050001;
-        public static final int home_page=0x7f050002;
-        public static final int more=0x7f050005;
-        public static final int search_str=0x7f050006;
-        public static final int usercenter=0x7f050004;
+        public static final int app_name=0x7f060001;
+        public static final int back=0x7f060008;
+        public static final int default_str=0x7f060000;
+        public static final int detail=0x7f060009;
+        public static final int download=0x7f060004;
+        public static final int hello_world=0x7f060002;
+        public static final int home_page=0x7f060003;
+        public static final int more=0x7f060006;
+        public static final int search_str=0x7f060007;
+        public static final int usercenter=0x7f060005;
     }
     public static final class style {
         /** 
@@ -540,11 +556,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int BottomTabStyle=0x7f060002;
+        public static final int AppTheme=0x7f070001;
+        public static final int BottomTabStyle=0x7f070002;
     }
 }
