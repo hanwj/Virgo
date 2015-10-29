@@ -54,10 +54,9 @@ public class HomePageFragment extends Fragment {
 		((ScrollView)view.findViewById(R.id.scrollview)).scrollTo(0,0);
 	}
 	
-	//Ê×Ò³ÍÆ¼ö
+	//é¦–é¡µæ¨è
 	private void initRecommendationViewPager()
 	{
-		//Ê×Ò³ÍÆ¼ö
 		int itemNum = 4;
 		recommendationViewPager = (ViewPager)view.findViewById(R.id.id_viewPager);
 		LayoutInflater inflater = LayoutInflater.from(getActivity());
@@ -67,7 +66,7 @@ public class HomePageFragment extends Fragment {
 			item = inflater.inflate(R.layout.layout_pic_with_text, null);
 			ImageView img = (ImageView)item.findViewById(R.id.id_img);
 			img.setImageResource(R.drawable.pic1);
-			((TextView)item.findViewById(R.id.id_name)).setText("º£ÔôÍõ");
+			((TextView)item.findViewById(R.id.id_name)).setText("æµ·è´¼ç‹");
 			final int position = i;
 			img.setOnClickListener(new OnClickListener(){
 				
@@ -135,7 +134,7 @@ public class HomePageFragment extends Fragment {
 		}
 	}
 	
-	//Ç°3Ãû
+	//å‰3å
 	private void initRank()
 	{
 		int[] rankId = {R.id.id_rank1,R.id.id_rank2,R.id.id_rank3};
@@ -145,18 +144,18 @@ public class HomePageFragment extends Fragment {
 		{
 			rankView = view.findViewById(rankId[i]);
 			((ImageView)rankView.findViewById(R.id.id_img)).setImageResource(pics[i]);
-			((TextView)rankView.findViewById(R.id.id_name)).setText("²âÊÔ");
+			((TextView)rankView.findViewById(R.id.id_name)).setText("æµ‹è¯•");
 		}
 		
 	}
 	
-	//·ÖÀàÁĞ³öÂş»­
+	//æ¼«ç”»åˆ†ç±»
 	private void initGridView()
 	{
 		View subContainer = view.findViewById(R.id.id_subcontainer);
 		LayoutInflater inflater = LayoutInflater.from(getActivity());
 		View gridLayout = inflater.inflate(R.layout.layout_gridview_with_title, null);
-		((TextView)gridLayout.findViewById(R.id.id_title)).setText("¾«Ñ¡");
+		((TextView)gridLayout.findViewById(R.id.id_title)).setText("ç²¾é€‰");
 		MyGridView gridView = (MyGridView)gridLayout.findViewById(R.id.id_gridview);
 		String[] from = {"image","name"};
 		int[] to = {R.id.id_img,R.id.id_name};
@@ -165,7 +164,7 @@ public class HomePageFragment extends Fragment {
 		{
 			Map<String,Object> map = new HashMap<String,Object>();
 			map.put("image", R.drawable.pic3);
-			map.put("name","²âÊÔ");
+			map.put("name","æµ‹è¯•");
 			listData.add(map);
 		}
 		gridView.setAdapter(new SimpleAdapter(getActivity(), listData, R.layout.layout_pic_with_text, from, to));
