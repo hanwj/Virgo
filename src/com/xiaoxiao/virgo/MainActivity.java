@@ -3,6 +3,7 @@ package com.xiaoxiao.virgo;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.umeng.message.PushAgent;
 import com.xiaoxiao.fragment.HomePageFragment;
 import com.xiaoxiao.fragment.MyFragmentAdapter;
 
@@ -19,7 +20,7 @@ public class MainActivity extends FragmentActivity {
 
 	private List<Fragment> pageList;
     private RadioGroup mRadioGroup;
-    
+    private PushAgent mPushAgent;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +33,12 @@ public class MainActivity extends FragmentActivity {
         
         ViewPager viewPager = (ViewPager)findViewById(R.id.viewPager);
         viewPager.setAdapter(new MyFragmentAdapter(getSupportFragmentManager(),pageList));
-        //initView();
+        initView();
     }
     
     private void initView(){
-    	
+    	mPushAgent = PushAgent.getInstance(this);
+    	mPushAgent.enable();
+    	mPushAgent.onAppStart();
     }
 }
