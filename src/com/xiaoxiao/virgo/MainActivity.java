@@ -35,8 +35,12 @@ public class MainActivity extends FragmentActivity {
         viewPager.setAdapter(new MyFragmentAdapter(getSupportFragmentManager(),pageList));
         initView();
     }
-    
-    private void initView(){
+    private void initView()
+    {
+    	initUMeng();
+    }
+    private void initUMeng()
+    {
     	mPushAgent = PushAgent.getInstance(this);
     	mPushAgent.enable();
     	mPushAgent.onAppStart();

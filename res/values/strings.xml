@@ -11,4 +11,6 @@
 	<string name="search_str">漫画名|作者</string>
 	<string name="back">返回</string>
 	<string name="detail">详情</string>
+	<string name="add_collection">加入收藏</string>
+	<string name="continue_read">继续阅读</string>
 </resources>
