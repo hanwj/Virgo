@@ -10,7 +10,7 @@
         android:layout_height="45dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:background="@color/floralwhite">
+        android:background="#fff">
         
         <EditText 
             android:id="@+id/id_searchbar"

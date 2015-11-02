@@ -13,4 +13,8 @@
 	<string name="detail">详情</string>
 	<string name="add_collection">加入收藏</string>
 	<string name="continue_read">继续阅读</string>
+	<string name="shared">分享</string>
+	<string name="deliver">投递</string>
+	<string name="comment">评论</string>
+	<string name="anim">动画</string>
 </resources>
