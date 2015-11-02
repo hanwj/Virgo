@@ -5,6 +5,7 @@
 	<color name="blue">#007aff</color>
 	<color name="white">#fff</color>
 	<color name="black">#000</color>
-	<color name="gray">#666666</color>
-	<color name="black_3">#333333</color>
+	<color name="gray_6">#666666</color>
+	<color name="gray_3">#333333</color>
+	<color name="gray_9">#999999</color>
 </resources>

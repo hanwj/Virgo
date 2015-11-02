@@ -28,13 +28,5 @@
 	    <item name="android:layout_marginBottom">3dp</item>
 	    <item name="android:drawablePadding">2dp</item>
 	</style>
-	
-	<style name="buttonStyle1">
-	    <item name="android:layout_width">0dp</item>
-	    <item name="android:layout_height">wrap_content</item>
-	    <item name="android:layout_weight">1</item>
-	    <item name="android:background">@null</item>
-	    <item name="android:textColor">@color/black_3</item>
-	    <item name="android:scaleType">fitXY</item>
-	</style>
+
 </resources>
