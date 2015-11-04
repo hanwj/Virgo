@@ -1,10 +1,19 @@
 package com.xiaoxiao.virgo;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 import com.xiaoxiao.fragment.ContentFragment;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -48,6 +57,9 @@ public class MainActivity extends FragmentActivity {
 					break;
 				case R.id.id_btn2:
 					textView.setText("button 2");
+					Intent intent = new Intent();
+					intent.setAction("com.xiaoxiao.virgo.helloReceiver");
+					sendBroadcast(intent);
 				}
 			}
         	
@@ -56,6 +68,7 @@ public class MainActivity extends FragmentActivity {
         btn2.setOnClickListener(clickListener);
         setDefaultFragment();
         //initView();
+        sharedPreferences();
     }
     private void setDefaultFragment()
     {
@@ -64,6 +77,58 @@ public class MainActivity extends FragmentActivity {
     	contentFragment = new ContentFragment();
     	transaction.replace(R.id.id_content,contentFragment);
     	transaction.commit();
+    }
+    
+    //应用配置存储
+    private void sharedPreferences()
+    {
+    	SharedPreferences setting = getPreferences(Context.MODE_PRIVATE);
+    	if(setting.getString("username", null) == null)
+    	{
+    		SharedPreferences.Editor editor = setting.edit();
+    		editor.putString("username", "world");
+    		editor.commit();
+    	}
+    }
+    
+    private String getFileContent(String filePath)
+    {
+    	StringBuffer sb = new StringBuffer();
+    	FileInputStream stream = null;
+    	try {
+			stream = openFileInput(filePath);
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
+				String line = "";
+				try {
+					while((line = br.readLine()) != null)
+					{
+						sb.append(line);
+					}
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally{
+			if(stream != null)
+			{
+				try {
+					stream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+    	return sb.toString();
     }
     
     private void initView(){
