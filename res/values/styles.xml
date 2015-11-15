@@ -25,8 +25,10 @@
 	    <item name="android:layout_weight">1</item>
 	    <item name="android:gravity">center</item>
 	    <item name="android:layout_marginTop">3dp</item>
-	    <item name="android:layout_marginBottom">3dp</item>
+	    <item name="android:layout_marginBottom">1dp</item>
 	    <item name="android:drawablePadding">2dp</item>
+	    <item name="android:textSize">8sp</item>
+	    <item name="android:textColor">#b2b2b2</item>
 	</style>
 
 </resources>

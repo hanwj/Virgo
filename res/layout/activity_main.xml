@@ -13,6 +13,11 @@
         android:layout_weight="1">   	    
     </android.support.v4.view.ViewPager>
     
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#b2b2b2"/>
+    
     <RadioGroup
         android:id="@+id/id_radiogroup"
         android:layout_width="match_parent"
@@ -22,27 +27,27 @@
         
         <RadioButton 
             android:id="@+id/rb_btn1"
-            android:text="@string/download"
+            android:text="@string/home_page"
             style="@style/BottomTabStyle"
-            android:drawableTop="@drawable/selector_collection"
+            android:drawableTop="@drawable/selector_homepage"
             android:checked="true"/>
         
         <RadioButton 
             android:id="@+id/rb_btn2"
-            android:drawableTop="@drawable/selector_homepage"
-            android:text="@string/home_page"
+            android:drawableTop="@drawable/selector_rank"
+            android:text="@string/rank"
             style="@style/BottomTabStyle"/>        
         
         <RadioButton
             android:id="@+id/rb_btn3"
-            android:text="@string/usercenter"
-            android:drawableTop="@drawable/selector_usercenter"
+            android:text="@string/cartoon_circle"
+            android:drawableTop="@drawable/selector_circle"
             style="@style/BottomTabStyle"/>
         
         <RadioButton 
             android:id="@+id/rb_btn4"
-            android:text="@string/more"
-            android:drawableTop="@drawable/selector_more"
+            android:text="@string/download"
+            android:drawableTop="@drawable/selector_download"
             style="@style/BottomTabStyle"/>
         
     </RadioGroup>

@@ -23,36 +23,40 @@ public final class R {
     }
     public static final class drawable {
         public static final int backicon=0x7f020000;
-        public static final int collection_icon=0x7f020001;
-        public static final int collection_light=0x7f020002;
-        public static final int collection_normal=0x7f020003;
-        public static final int commentbtn=0x7f020004;
-        public static final int deliverbtn=0x7f020005;
-        public static final int fire_icon=0x7f020006;
-        public static final int homeicon_light=0x7f020007;
-        public static final int homeicon_normal=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int indicator_default=0x7f02000a;
-        public static final int indicator_selected=0x7f02000b;
-        public static final int more_light=0x7f02000c;
-        public static final int more_normal=0x7f02000d;
-        public static final int pic1=0x7f02000e;
-        public static final int pic2=0x7f02000f;
-        public static final int pic3=0x7f020010;
-        public static final int pic4=0x7f020011;
-        public static final int playbtn=0x7f020012;
-        public static final int search_icon=0x7f020013;
-        public static final int selector_collection=0x7f020014;
-        public static final int selector_homepage=0x7f020015;
-        public static final int selector_more=0x7f020016;
-        public static final int selector_usercenter=0x7f020017;
-        public static final int shape_bottom_bg=0x7f020018;
-        public static final int shape_rectangle_with_stroke=0x7f020019;
-        public static final int shape_round_rectangle=0x7f02001a;
-        public static final int shape_search_background=0x7f02001b;
-        public static final int sharebtn=0x7f02001c;
-        public static final int usercenter_light=0x7f02001d;
-        public static final int usercenter_normal=0x7f02001e;
+        public static final int circle_light=0x7f020001;
+        public static final int circle_normal=0x7f020002;
+        public static final int collection_icon=0x7f020003;
+        public static final int collection_light=0x7f020004;
+        public static final int collection_normal=0x7f020005;
+        public static final int commentbtn=0x7f020006;
+        public static final int deliverbtn=0x7f020007;
+        public static final int download_light=0x7f020008;
+        public static final int download_normal=0x7f020009;
+        public static final int fire_icon=0x7f02000a;
+        public static final int homeicon_light=0x7f02000b;
+        public static final int homeicon_normal=0x7f02000c;
+        public static final int ic_launcher=0x7f02000d;
+        public static final int indicator_default=0x7f02000e;
+        public static final int indicator_selected=0x7f02000f;
+        public static final int more_light=0x7f020010;
+        public static final int more_normal=0x7f020011;
+        public static final int pic1=0x7f020012;
+        public static final int pic2=0x7f020013;
+        public static final int pic3=0x7f020014;
+        public static final int pic4=0x7f020015;
+        public static final int playbtn=0x7f020016;
+        public static final int rank_light=0x7f020017;
+        public static final int rank_normal=0x7f020018;
+        public static final int search_icon=0x7f020019;
+        public static final int selector_circle=0x7f02001a;
+        public static final int selector_download=0x7f02001b;
+        public static final int selector_homepage=0x7f02001c;
+        public static final int selector_rank=0x7f02001d;
+        public static final int shape_bottom_bg=0x7f02001e;
+        public static final int shape_rectangle_with_stroke=0x7f02001f;
+        public static final int shape_round_rectangle=0x7f020020;
+        public static final int shape_search_background=0x7f020021;
+        public static final int sharebtn=0x7f020022;
     }
     public static final class id {
         public static final int id_autor=0x7f080008;
@@ -115,22 +119,24 @@ public final class R {
         public static final int layout_pic_with_text=0x7f030009;
     }
     public static final class string {
-        public static final int add_collection=0x7f06000a;
-        public static final int anim=0x7f06000f;
+        public static final int add_collection=0x7f06000c;
+        public static final int anim=0x7f060011;
         public static final int app_name=0x7f060001;
-        public static final int back=0x7f060008;
-        public static final int comment=0x7f06000e;
-        public static final int continue_read=0x7f06000b;
+        public static final int back=0x7f06000a;
+        public static final int cartoon_circle=0x7f060005;
+        public static final int comment=0x7f060010;
+        public static final int continue_read=0x7f06000d;
         public static final int default_str=0x7f060000;
-        public static final int deliver=0x7f06000d;
-        public static final int detail=0x7f060009;
-        public static final int download=0x7f060004;
+        public static final int deliver=0x7f06000f;
+        public static final int detail=0x7f06000b;
+        public static final int download=0x7f060006;
         public static final int hello_world=0x7f060002;
         public static final int home_page=0x7f060003;
-        public static final int more=0x7f060006;
-        public static final int search_str=0x7f060007;
-        public static final int shared=0x7f06000c;
-        public static final int usercenter=0x7f060005;
+        public static final int more=0x7f060008;
+        public static final int rank=0x7f060004;
+        public static final int search_str=0x7f060009;
+        public static final int shared=0x7f06000e;
+        public static final int usercenter=0x7f060007;
     }
     public static final class style {
         /** 

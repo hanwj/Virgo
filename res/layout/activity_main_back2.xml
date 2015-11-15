@@ -34,21 +34,21 @@
         <Button 
             android:id="@+id/id_btn2"
             android:text="@string/download"
-            android:drawableTop="@drawable/selector_collection"
+            android:drawableTop="@drawable/selector_download"
             android:background="@null"
             style="@style/BottomTabStyle"/>
         
         <Button 
             android:id="@+id/id_btn3"
             android:text="@string/usercenter"
-            android:drawableTop="@drawable/selector_usercenter"
+            android:drawableTop="@drawable/selector_rank"
             android:background="@null"
             style="@style/BottomTabStyle"/>
         
         <Button 
             android:id="@+id/id_btn4"
             android:text="@string/more"
-            android:drawableTop="@drawable/selector_more"
+            android:drawableTop="@drawable/selector_circle"
             android:background="@null"
             style="@style/BottomTabStyle"/>
         

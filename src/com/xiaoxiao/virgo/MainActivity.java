@@ -6,6 +6,7 @@ import java.util.List;
 import com.umeng.message.PushAgent;
 import com.xiaoxiao.fragment.HomePageFragment;
 import com.xiaoxiao.fragment.MyFragmentAdapter;
+import com.xiaoxiao.virgo.base.BaseActivity;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -16,7 +17,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RadioGroup;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends BaseActivity {
 
 	private List<Fragment> pageList;
     private RadioGroup mRadioGroup;

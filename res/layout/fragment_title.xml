@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginLeft="3dp"
-        android:background="@drawable/selector_usercenter"/>
+        android:background="@drawable/selector_rank"/>
 	
     <TextView 
         android:id="@+id/id_title_center_title"
