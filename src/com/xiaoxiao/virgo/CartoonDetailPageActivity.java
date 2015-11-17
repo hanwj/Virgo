@@ -51,7 +51,7 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		introText.setText("介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍");
 		int lines = introText.getLineCount();
 		moreView = (ImageView)findViewById(R.id.id_more_btn);
-		new MyOpenTask().execute(100);
+		//new MyOpenTask().execute(100);
 		//显示章节
 		MyGridView gridView = (MyGridView)findViewById(R.id.id_chapter_container);
 		gridView.setAdapter(new ButtonAdapter(this));
@@ -94,6 +94,24 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		}
 	}
 	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		// TODO Auto-generated method stub
+		super.onWindowFocusChanged(hasFocus);
+		int lines = introText.getLineCount();
+		if(lines > 2)
+		{
+			introText.setMaxLines(2);
+			introText.setEllipsize(TextUtils.TruncateAt.END);
+			moreView.setVisibility(View.VISIBLE);
+			moreView.setOnClickListener(CartoonDetailPageActivity.this);
+		}
+		else
+		{
+			moreView.setVisibility(View.GONE);
+		}
+	}
+
 	private class ButtonAdapter extends BaseAdapter
 	{
 		private Context context;
@@ -140,6 +158,7 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		@Override
 		protected Integer doInBackground(Integer... params) {
 			// TODO Auto-generated method stub
+			
 			return null;
 		}
 
