@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	
-    <string name="default_str">default</string>
+    <string name="default_str">默认</string>
     <string name="app_name">Virgo</string>
     <string name="hello_world">Hello world!</string>
 	<string name="home_page">首页</string>

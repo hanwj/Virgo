@@ -73,7 +73,7 @@ public class HomePageFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Toast.makeText(getActivity(), "viewPager "+position, Toast.LENGTH_SHORT).show();
+					//Toast.makeText(getActivity(), "viewPager "+position, Toast.LENGTH_SHORT).show();
 					Intent intent = new Intent(getActivity(),CartoonDetailPageActivity.class);
 					getActivity().startActivity(intent);
 				}
