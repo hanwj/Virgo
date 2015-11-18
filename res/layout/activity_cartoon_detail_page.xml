@@ -283,11 +283,16 @@
 	            android:layout_marginLeft="20dp"
 	            android:layout_marginRight="20dp"
 	            android:layout_marginTop="10dp"
+	            android:listSelector="@color/transparent"
 	            android:numColumns="4"
 	            android:verticalSpacing="10dp"
 	            android:horizontalSpacing="10dp">
 	            
 	        </com.xiaoxiao.view.MyGridView>
+	        
+	      	<View 
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="10dp"/>
 	    </LinearLayout>
 	    
 	</ScrollView>

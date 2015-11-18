@@ -11,8 +11,11 @@ import android.text.TextUtils;
 import android.transition.Visibility;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -57,6 +60,20 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		gridView.setAdapter(new ButtonAdapter(this));
 		Button backBtn = (Button)findViewById(R.id.id_backbtn);
 		backBtn.setOnClickListener(this);
+		gridView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// TODO Auto-generated method stub
+				for (int i = 0; i < parent.getChildCount(); i++) {
+					View v = parent.getChildAt(i);
+					v.setBackgroundResource(R.drawable.selector_chapter_bg);
+				}
+				view.setBackgroundResource(R.drawable.shape_chapter_bg_focused);
+			}
+			
+		});
 		
 	}
 
@@ -142,11 +159,8 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			// TODO Auto-generated method stub
-			Button view = new Button(context);
-			view.setBackgroundResource(R.drawable.shape_rectangle_with_stroke);
-			view.setTextColor(getResources().getColor(R.color.gray_6));
-			view.setText("1话");
-			
+			View view = LayoutInflater.from(CartoonDetailPageActivity.this).inflate(R.layout.layout_chapter_item, null);
+			((TextView)view.findViewById(R.id.id_title)).setText("1话");
 			return view;
 		}
 		

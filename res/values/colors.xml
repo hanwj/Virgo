@@ -8,11 +8,12 @@
 	<color name="white">#fff</color>
 	
 	<color name="black">#000</color>
+	<color name="transparent">#00000000</color>
 	
 	<color name="gray_6">#666666</color>
 	<color name="gray_3">#333333</color>
 	<color name="gray_9">#999999</color>
 	<color name="gray_light">#b2b2b2</color>
-	
+	<color name="gray_invalid">#d1d1d1</color>
 	<color name="green_button">#4ca634</color>
 </resources>
