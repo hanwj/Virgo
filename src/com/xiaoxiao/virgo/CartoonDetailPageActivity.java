@@ -42,6 +42,7 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		String name = "海贼王";
 		//title
 		((TextView)findViewById(R.id.id_title)).setText(name);
+		findViewById(R.id.id_downloadbtn).setOnClickListener(this);
 		
 		TextView nameText = (TextView)findViewById(R.id.id_name);
 		String nameHtml = "<font color='red'>[完]</font><font color='black'>" + name +"</font>";
@@ -88,6 +89,7 @@ public class CartoonDetailPageActivity extends Activity implements OnClickListen
 		else if(id == R.id.id_downloadbtn)
 		{
 			//下载
+			
 		}
 		else if(id == R.id.id_giftbtn)
 		{
