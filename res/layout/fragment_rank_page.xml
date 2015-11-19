@@ -2,17 +2,82 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-   <LinearLayout 
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal">
-       <TextView 
-           android:layout_width="0dp"
-           android:layout_height="35dp"
-           android:layout_weight="1"
-           android:textColor="@color/blue"
-           android:text="总排行"/>
-		
-   </LinearLayout> 
+	<FrameLayout 
+	    android:id="@+id/id_top_part"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/header_height"
+	    android:focusable="false"
+	    android:focusableInTouchMode="true">
+	 	<EditText 
+		    android:id="@+id/id_search_bar"
+		    android:layout_width="match_parent"
+		    android:layout_height="30dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_gravity="center_vertical"
+		    android:paddingLeft="20dp"
+		    android:drawableLeft="@drawable/search_icon"
+		    android:hint="@string/search_str"
+		    android:background="@drawable/shape_search_background"/>
+
+	 	<View
+	 	    android:layout_width="match_parent"
+	 	    android:layout_height="1px"
+	 	    android:layout_gravity="end|bottom"
+	 	    android:background="@color/gray_light" />
+   
+	</FrameLayout>
+
+	
+	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_below="@id/id_top_part">
+	    <TabHost
+	        android:id="@+id/id_tabhost"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	
+	            <TabWidget
+	                android:id="@android:id/tabs"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	            </TabWidget>
+	
+	            <FrameLayout
+	                android:id="@android:id/tabcontent"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent" >
+	
+	                <ListView
+	                    android:id="@+id/tab1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" />
+	
+	                <ListView
+	                    android:id="@+id/tab2"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" />
+	                
+	                <ListView
+	                    android:id="@+id/tab3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" />
+	                <ListView
+	                    android:id="@+id/tab4"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" />
+	            </FrameLayout>
+	        </LinearLayout>
+	    </TabHost>
+	</FrameLayout>
+    
 
 </RelativeLayout>

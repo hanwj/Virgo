@@ -1,6 +1,6 @@
 package com.xiaoxiao.virgo;
 
-import com.xiaoxiao.view.MyGridView;
+import com.xiaoxiao.virgo.view.MyGridView;
 
 import android.app.Activity;
 import android.content.Context;

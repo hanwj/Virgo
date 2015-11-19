@@ -1,4 +1,4 @@
-package com.xiaoxiao.view;
+package com.xiaoxiao.virgo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

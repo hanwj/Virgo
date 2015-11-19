@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.xiaoxiao.view.MyGridView;
 import com.xiaoxiao.virgo.CartoonDetailPageActivity;
 import com.xiaoxiao.virgo.R;
+import com.xiaoxiao.virgo.view.MyGridView;
 
 import android.R.color;
 import android.content.Intent;

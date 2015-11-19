@@ -16,4 +16,6 @@
 	<color name="gray_light">#b2b2b2</color>
 	<color name="gray_invalid">#d1d1d1</color>
 	<color name="green_button">#4ca634</color>
+	<color name="gray_bg">#e3e4e6</color>
+	<color name="gray_word">#8e8e93</color>
 </resources>
