@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:numColumns="2"
         android:verticalSpacing="10dp"
+        android:listSelector="@color/transparent"
         android:horizontalSpacing="10dp"/>
         
 </LinearLayout>

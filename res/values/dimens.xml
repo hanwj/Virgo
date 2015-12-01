@@ -2,5 +2,6 @@
 <resources>
  
     <dimen name="header_height">45dp</dimen>
-
+    <dimen name="rankitem_height">100dp</dimen>
+	<dimen name="rankicon_size">86dp</dimen>
 </resources>
