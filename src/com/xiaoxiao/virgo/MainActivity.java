@@ -3,28 +3,29 @@ package com.xiaoxiao.virgo;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.Window;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+
 import com.umeng.message.PushAgent;
 import com.xiaoxiao.fragment.HomePageFragment;
 import com.xiaoxiao.fragment.MyFragmentAdapter;
 import com.xiaoxiao.fragment.RankPageFragment;
 import com.xiaoxiao.virgo.base.BaseActivity;
-
-import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.Window;
-import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
+import com.xiaoxiao.virgo.view.MyViewPager;
 
 public class MainActivity extends BaseActivity {
 
 	private List<Fragment> pageList;
     private RadioGroup mRadioGroup;
     private PushAgent mPushAgent;
-    private ViewPager mViewPager;
+    private MyViewPager mViewPager;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +36,9 @@ public class MainActivity extends BaseActivity {
         pageList.add(new HomePageFragment());
         pageList.add(new RankPageFragment());
         
-        mViewPager = (ViewPager)findViewById(R.id.viewPager);
+        mViewPager = (MyViewPager)findViewById(R.id.viewPager);
         mViewPager.setAdapter(new MyFragmentAdapter(getSupportFragmentManager(),pageList));
+        mViewPager.setScrollable(false);
         
         mRadioGroup = (RadioGroup)findViewById(R.id.id_radiogroup);
         mRadioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener(){
